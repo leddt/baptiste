@@ -1,4 +1,5 @@
 import { Dave } from "dave";
+import { Guillaume } from "sigmund-front-end";
 import { Amy } from "bots";
 import { CruiseBoatFactory, Orca } from "marine";
 import { Network, NetworkStatus } from "network";
@@ -14,6 +15,8 @@ function baptiste(asNoTracking) {
     boat.connectCable(Network.entryPoint);
     Network.reload();
   }
+
+  this.tight = accouchement.date.target !== Guillaume.girlfriend;
 
   if (Orca.is("sad")) {
     Orca.DorsalFin.ApplyTransform("{ rotate:135, deflate:90% }");
