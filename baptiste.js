@@ -1,9 +1,17 @@
+import { Universe } from "reality";
 import { Dave } from "dave";
 import { Guillaume } from "sigmund-front-end";
 import { Amy } from "bots";
 import { CruiseBoatFactory, Orca } from "marine";
 import { Network, NetworkStatus } from "network";
 import { SteamCatalog } from "steam";
+
+while (baptiste === undefined) {
+  Universe.destroy();
+  Universe.createNew();
+  
+  baptiste = Universe.findNamedLocation("Sucé")?.getResident({annoying: true});
+}
 
 function baptiste(asNoTracking) {
   if (Network.status === NetworkStatus.offline) {
